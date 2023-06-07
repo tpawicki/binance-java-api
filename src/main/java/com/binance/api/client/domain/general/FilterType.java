@@ -24,5 +24,7 @@ public enum FilterType {
   // Exchange
   EXCHANGE_MAX_NUM_ORDERS,
   EXCHANGE_MAX_ALGO_ORDERS,
-  TRAILING_DELTA
+  TRAILING_DELTA,
+
+  NOTIONAL
 }
