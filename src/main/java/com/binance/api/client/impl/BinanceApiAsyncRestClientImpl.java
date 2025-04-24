@@ -170,7 +170,7 @@ public class BinanceApiAsyncRestClientImpl implements BinanceApiAsyncRestClient 
   }
 
   @Override
-  public void cancelOpenOrders(CancelOrderRequest cancelOrderRequest, BinanceApiCallback<CancelOrderResponse> callback) {
+  public void cancelOpenOrders(CancelOrderRequest cancelOrderRequest, BinanceApiCallback<List<CancelOrderResponse>> callback) {
     binanceApiService.cancelOpenOrders(cancelOrderRequest.getSymbol(),
             cancelOrderRequest.getRecvWindow(), cancelOrderRequest.getTimestamp()).enqueue(new BinanceApiCallbackAdapter<>(callback));
   }

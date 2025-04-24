@@ -173,7 +173,7 @@ public interface BinanceApiRestClient {
    */
   CancelOrderResponse cancelOrder(CancelOrderRequest cancelOrderRequest);
 
-  CancelOrderResponse cancelOpenOrders(CancelOrderRequest cancelOrderRequest);
+  List<CancelOrderResponse> cancelOpenOrders(CancelOrderRequest cancelOrderRequest);
 
   /**
    * Get all open orders on a symbol.

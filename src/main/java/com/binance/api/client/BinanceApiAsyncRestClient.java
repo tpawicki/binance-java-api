@@ -200,7 +200,7 @@ public interface BinanceApiAsyncRestClient {
    */
   void cancelOrder(CancelOrderRequest cancelOrderRequest, BinanceApiCallback<CancelOrderResponse> callback);
 
-  void cancelOpenOrders(CancelOrderRequest cancelOrderRequest, BinanceApiCallback<CancelOrderResponse> callback);
+  void cancelOpenOrders(CancelOrderRequest cancelOrderRequest, BinanceApiCallback<List<CancelOrderResponse>> callback);
 
   /**
    * Get all open orders on a symbol (asynchronous).
